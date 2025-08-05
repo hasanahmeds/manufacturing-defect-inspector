@@ -1,0 +1,622 @@
+[
+  {
+    "timestamp": "2025-08-05T19:46:26+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 1/36",
+    "prefix_bytes": {
+      "upstream/LICENSE": 10142,
+      "upstream/NOTICE": 67
+    }
+  },
+  {
+    "timestamp": "2025-08-05T21:20:21+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 2/36",
+    "prefix_bytes": {
+      "upstream/pyproject.toml": 169,
+      "upstream/requirements.txt": 222,
+      "upstream/requirements_dev.txt": 76,
+      "upstream/setup.cfg": 323,
+      "upstream/setup.py": 629,
+      "upstream/tox.ini": 401,
+      "upstream/src/patchcore/utils.py": 5805,
+      "upstream/.gitattributes": 86,
+      "upstream/.gitignore": 44
+    }
+  },
+  {
+    "timestamp": "2025-08-07T15:52:12+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 3/36",
+    "prefix_bytes": {
+      "upstream/bin/load_and_evaluate_patchcore.py": 10682,
+      "upstream/bin/run_patchcore.py": 7219
+    }
+  },
+  {
+    "timestamp": "2025-08-07T16:49:26+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 4/36",
+    "prefix_bytes": {
+      "upstream/bin/run_patchcore.py": 16101,
+      "upstream/CODE_OF_CONDUCT.md": 309,
+      "upstream/CONTRIBUTING.md": 3160,
+      "upstream/images/architecture.png": 318372,
+      "upstream/images/patchcore_defect_segmentation.png": 1735712,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-07T18:03:31+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 5/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-08T18:15:46+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 6/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-08T18:49:55+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 7/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-08T19:02:54+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 8/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-09T20:08:28+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 9/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": 131,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-09T22:30:40+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 10/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": 131,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": 131,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-10T19:57:15+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 11/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/results.csv": 1712,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_bottle/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_bottle/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_cable/nnscorer_search_index.faiss": 133
+    }
+  },
+  {
+    "timestamp": "2025-08-11T14:09:32+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 12/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_cable/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_capsule/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_capsule/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_carpet/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_carpet/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_grid/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_grid/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/nnscorer_search_index.faiss": 134,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_leather/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_leather/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-11T15:46:53+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 13/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_pill/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_pill/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_screw/nnscorer_search_index.faiss": 134,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_screw/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_tile/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_tile/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_transistor/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_transistor/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_wood/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_wood/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_zipper/nnscorer_search_index.faiss": 133
+    }
+  },
+  {
+    "timestamp": "2025-08-11T20:32:44+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 14/36",
+    "prefix_bytes": {
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_zipper/patchcore_params.pkl": 128,
+      "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/results.csv": 1740,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-12T17:45:58+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 15/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-14T14:53:49+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 16/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-14T18:04:25+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 17/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-14T22:51:57+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 18/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-15T15:57:18+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 19/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-15T19:33:33+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 20/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-15T19:56:11+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 21/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/results.csv": 1721,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-15T22:10:09+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 22/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-17T16:21:53+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 23/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-18T17:50:22+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 24/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-18T18:15:25+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 25/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-18T22:49:40+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 26/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-19T16:28:09+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 27/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": 132
+    }
+  },
+  {
+    "timestamp": "2025-08-19T19:02:19+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 28/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": 128,
+      "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/results.csv": 1760,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_bottle/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_bottle/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_cable/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_cable/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_capsule/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_capsule/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_carpet/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_carpet/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_grid/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_grid/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/nnscorer_search_index.faiss": 133
+    }
+  },
+  {
+    "timestamp": "2025-08-20T19:51:58+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 29/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_leather/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_leather/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_pill/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_pill/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_screw/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_screw/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_tile/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_tile/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-21T12:44:56+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 30/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_transistor/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_transistor/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_wood/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_wood/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_zipper/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_zipper/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/results.csv": 1765,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_bottle/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_bottle/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_cable/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_cable/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_capsule/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_capsule/patchcore_params.pkl": 128
+    }
+  },
+  {
+    "timestamp": "2025-08-21T14:11:32+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 31/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_carpet/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_carpet/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_grid/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_grid/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_hazelnut/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_hazelnut/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_leather/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_leather/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_metal_nut/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_metal_nut/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_pill/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_pill/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_screw/nnscorer_search_index.faiss": 133
+    }
+  },
+  {
+    "timestamp": "2025-08-22T16:25:00+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 32/36",
+    "prefix_bytes": {
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_screw/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_tile/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_tile/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_toothbrush/nnscorer_search_index.faiss": 132,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_toothbrush/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_transistor/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_transistor/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_wood/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_wood/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_zipper/nnscorer_search_index.faiss": 133,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_zipper/patchcore_params.pkl": 128,
+      "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/results.csv": 1725,
+      "upstream/README.md": 9595
+    }
+  },
+  {
+    "timestamp": "2025-08-22T17:06:31+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 33/36",
+    "prefix_bytes": {
+      "upstream/sample_evaluation.sh": 801,
+      "upstream/sample_training.sh": 4948,
+      "upstream/src/patchcore/__init__.py": 0,
+      "upstream/src/patchcore/backbones.py": 3271,
+      "upstream/src/patchcore/common.py": 10724
+    }
+  },
+  {
+    "timestamp": "2025-08-22T17:44:14+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 34/36",
+    "prefix_bytes": {
+      "upstream/src/patchcore/common.py": 13406,
+      "upstream/src/patchcore/datasets/__init__.py": 0,
+      "upstream/src/patchcore/datasets/mvtec.py": 5942,
+      "upstream/src/patchcore/metrics.py": 2800,
+      "upstream/src/patchcore/networks/__init__.py": 0,
+      "upstream/src/patchcore/patchcore.py": 2400
+    }
+  },
+  {
+    "timestamp": "2025-08-22T18:37:58+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 35/36",
+    "prefix_bytes": {
+      "upstream/src/patchcore/patchcore.py": 11936,
+      "upstream/src/patchcore/py.typed": 58,
+      "upstream/src/patchcore/sampler.py": 6961
+    }
+  },
+  {
+    "timestamp": "2025-08-22T20:24:01+00:00",
+    "message": "chore(import): reconstruct amazon-science/patchcore-inspection slice 36/36",
+    "prefix_bytes": {
+      "upstream/src/patchcore/VERSION": 6,
+      "upstream/local_run_test.sh": 160,
+      "upstream/test/test_common.py": 3830,
+      "upstream/test/test_patchcore.py": 5536,
+      "upstream/test/test_sampler.py": 4747
+    }
+  }
+]

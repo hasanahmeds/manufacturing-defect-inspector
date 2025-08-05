@@ -1,0 +1,2057 @@
+{
+  "number": 13,
+  "title": "Manufacturing Defect Inspector",
+  "slug": "manufacturing-defect-inspector",
+  "start": "2025-08-05",
+  "end": "2025-08-22",
+  "repo": "amazon-science/patchcore-inspection",
+  "branch": "main",
+  "license": "Apache-2.0",
+  "note": "PatchCore industrial anomaly detection; not the earlier custom supervised CNN classifier.",
+  "sha": "fcaa92f124fb1ad74a7acf56726decd4b27cbcad",
+  "archive_sha256": "7fdba8b2b1d3586bf16a3edad7a2d279e323da575f3b206bc5a1ae72b439f072",
+  "imported_at": "2026-10-28T21:31:36.173751+00:00",
+  "history": "Reconstructed import history; dates are not dates of original development.",
+  "upstream_files": {
+    "upstream/.gitattributes": {
+      "sha256": "e763c19830565f45337f1e0f8e416212876db8ebd4f68e1c4bde077d6c0eaca0",
+      "mode": "100644",
+      "bytes": 86
+    },
+    "upstream/.gitignore": {
+      "sha256": "90fad395f39f1052e4f8a8c3df416bc719008120f876e4226a26524ef683749c",
+      "mode": "100644",
+      "bytes": 44
+    },
+    "upstream/CODE_OF_CONDUCT.md": {
+      "sha256": "34b6c98d5c23127ae6769e95e483e5bf6d3704ae1f0d3ae4e69d15f4ede118b6",
+      "mode": "100644",
+      "bytes": 309
+    },
+    "upstream/CONTRIBUTING.md": {
+      "sha256": "993e7639b93ea44d96be9813b63f5beada0deb2d4677d2e91ea96bc51e15b44b",
+      "mode": "100644",
+      "bytes": 3160
+    },
+    "upstream/LICENSE": {
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "mode": "100644",
+      "bytes": 10142
+    },
+    "upstream/NOTICE": {
+      "sha256": "d4290ed64c2edd0fce1d84e3f9dfb2881240fe534def76b8cd29ed6af683e287",
+      "mode": "100644",
+      "bytes": 67
+    },
+    "upstream/README.md": {
+      "sha256": "b5ce522d4c9fdec9d98d7f50ea0e7fe72edf6cb767b97ce0ea82a3b6cc0651ee",
+      "mode": "100644",
+      "bytes": 9595
+    },
+    "upstream/bin/load_and_evaluate_patchcore.py": {
+      "sha256": "083b39a0bde2f484a0655d9f34b9a0760b81e638c1b97daa6033bcf7848839fe",
+      "mode": "100644",
+      "bytes": 10682
+    },
+    "upstream/bin/run_patchcore.py": {
+      "sha256": "617486640c830105c56ce4ec5f01fdf7aa7d168cddf32cecd790cc93a1935a2f",
+      "mode": "100644",
+      "bytes": 16101
+    },
+    "upstream/images/architecture.png": {
+      "sha256": "c94e0c497c592b063166312fdaad1239033558f691359ad1ed1b5dfd3e174c99",
+      "mode": "100644",
+      "bytes": 318372
+    },
+    "upstream/images/patchcore_defect_segmentation.png": {
+      "sha256": "2e25b81092e8d437c016c3a812fc7ee5508f873007316e04583ca7075455964c",
+      "mode": "100644",
+      "bytes": 1735712
+    },
+    "upstream/local_run_test.sh": {
+      "sha256": "0709f3433472ad76b79b3c857e887c652c7ecc8bdd1adfeb8c6affe83fd29fd5",
+      "mode": "100755",
+      "bytes": 160
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "a17546bee8b87617a7278bc65151e94d77b8cc26489124dc8f59bba094c0bb26",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "35f601d622e6c7a3eb9524a28c02659dd8801d1fe1697b8da8c4d29be3cd0342",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "856186dc17acbbb8b19196337e51c9a8b7fee53d14cf1021af5b9fa8e27bf57e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "4af7ba084c31fa8678dbaafaac0effc6d5f0513363ed7afc056e647ff76f2bc6",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "0269174ab84b73e1a149e4ce54ba6df5dd66ee498e59b96050f0152e5bcaddc4",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "3240dee09d4e498f2f6fa6985795fd668d2762d019b81f2986946a406b347932",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "5ef53d237acd6b535434d0148eb5b1bdb1ba7bcf822a3af336f60b6b7700d754",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "00e90d7291d2d1111488aebe99ff3b6b8cb6b3f7642d5818c4627dce48e91655",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "c07db4ddab651613e0f651e876bce8bd3b4db004c7ece305434e8c394fbaee5d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "3567664d7868c5d8613ff69dfe7c7600cb673d2603dbecdd9b6be985e09b920c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "1b4093d536423db61cfab53b9805570fa63d40645527da0a42ba5c2ce219f707",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "4ef7ccd3b5857e4344fc436f910a34c4316fb34165b4aac4a2217a3885434816",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "261ee76aecd0312136c5239bdadc002ec61a6675b333835d32d80471be0e9c89",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "cb6f37d3f59182cce568588835e86b521f248a59bb9868dbf2d13638b3d39c88",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "45ff18cc3edc0f79baee08236cd0fd4e4364d0418b200727f8067820d08d1e2c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "458e13b11fec81af0366305e7ef32199a1ac062ee1dc3ba7fd5e06086b2ee25e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "f0132986dde8a7df9a4d688a13f56791aaea4f4dd822ae0688af6cb3d1bdac75",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "64fc1575ccc967a482434c12f69e6e6ea0b6fe05f8ff4e3e2508443b663e7ea1",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "14abef3b627dfc49b9bcd49e1d0a7407be9fe6d02fb4cc9b68a012efbaffb84d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "6b0da1744ba77459efb123c840e499616de4d1b94fa273f64a98ca9ae7b88168",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "4f27efa47b4473e880b44847e83490191666b9de7bcde0d092e9ee2a961c407d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "d33ac4c86d12ba2f1ace24e307bb3cb6d778ab98c08db25601690dbfe37683cc",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "086e0847635ad41b1465f6d8159374a28a0e4a40971c51aab984776bddab216a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "d22b8d629b470f29ae570c47c5fdd332fb9d149733d9a597e0ce73a808a5b2da",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "177de141dd53fec72f532aafd039c9d86429e897c0eee50485eb94f9e062062e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "29319e6b46ea8540d3e3b92603626939970aa461237f832e5880361f78f4cdbf",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "234dc66796530a05423020aa6f4db5f6e9645555b3443b8681e1ac10217d4b2e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "8f2013729488284d108a8b99c3aa076c535e5a503f645ddc7378604b37591542",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "10e37ec78e1af4799fb74c73adbcd681a69ac0513d281e502748af47ed6a8c33",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "95dee3dac550e9177c1a3e7604a8f70a98bb9a9770fbcef0066538560d09185a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "0ce65a117c4130f7f723b45c3fef8cad8dbc24f91be21735e293b6df3af5644a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "2507927d871086a8143a324b4b8616f1afb0240230bdf59c493f767d43859f3e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "a0a1a2aed9ba7ea97d1f46f1559a03b9c29f7397d3c9ae75150f13a69307fffb",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "7015be6c9e532c122cbd44dd5ff2f891d804ddda9dc22a779891aa57ad6e1382",
+      "mode": "100644",
+      "bytes": 131
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "67db889e53726eb7b7b7d726f7871e06ee002445bf20f05d620e71980a579fba",
+      "mode": "100644",
+      "bytes": 131
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "3e4bfa087d91546f549737a3f7afc6126c8815a8dba1785c597324b02ed0fc07",
+      "mode": "100644",
+      "bytes": 131
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "b732e5adfcca69fcee14b41975cdb4258a119068eebb680edab8091a9219a79d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "5203f4bdd99b57500f41b60dbb30f663feecb1c2fae9e7d9cfd7e973439304c4",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "1452eb40fd4b89e960a149ec7aea8731fbb8eca4d224b3fd4c3731881d60b329",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "0329902d75b390b66f8b67e32269c5ee4ca561643865916375a143bfc1160b33",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "e5ab08bf82222b4ad89e20ad4df2ab8b0e8177cb252f76e0fe3a9f34fff64153",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "e1348b21cd44adad2d028cb132013bfd5c48efb1b8f0f0e23f80820598c94ed2",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "e41d2322f6fe6746d0bee78006baabc6ec2e7ea74fbb547e5fd5a8e8516e0582",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "c9e60844defb146ca33fbcdd93cc545779c4ac35842b1597bf0968b879345650",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "32fe2fa22138867696eeef4f1ea240160731d87f55761c0112fdc36f54cb7d0d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "eba16ca81c731dbd51058da47db3ea18caaaae4af9d5399d2b16e20c05ca4a0a",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "600eb20d9259224ebe0bf7e677ef9d523655f248f7262911284f294b8bd536ec",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "b8748c0f2ad47275b8bffb200388225e4181956ea62ee52e00dad8a475a30b0e",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/results.csv": {
+      "sha256": "b056b3ee64c29c42838b4a926a1017e081ad4ad5f33c2bb14872d19630edb5d1",
+      "mode": "100644",
+      "bytes": 1712
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_bottle/nnscorer_search_index.faiss": {
+      "sha256": "a7d1069fa679d3d98936a33afd617bdbbb2a3c8a36a6bffae9060d1efc9563bc",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_bottle/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_cable/nnscorer_search_index.faiss": {
+      "sha256": "1d78006ee995bb1d829b8907d738f6cd4f6270a5aa5206c3df54b744cb837576",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_cable/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_capsule/nnscorer_search_index.faiss": {
+      "sha256": "4807b5d304504496d36fbbeadd9d9e4135dd06708048af952786ad79bb5e8fba",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_capsule/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_carpet/nnscorer_search_index.faiss": {
+      "sha256": "ccb1c66a47b7570c6a62ac66f95835b0ed1f873d3fde3102630719b62520be6f",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_carpet/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_grid/nnscorer_search_index.faiss": {
+      "sha256": "cf84cb13995ca84ad22215da9489275b270344a88e1954125ed3a89c8eaa9316",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_grid/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/nnscorer_search_index.faiss": {
+      "sha256": "88bfc0a253a0a3f1831165d7e6557b0215c35b1a72d3310ac9f782bad87938af",
+      "mode": "100644",
+      "bytes": 134
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_leather/nnscorer_search_index.faiss": {
+      "sha256": "1fc307ca7a57c33651cd95afbdb8a1a84d5a60cbb0a7a33fa0b780f088b2ded2",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_leather/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/nnscorer_search_index.faiss": {
+      "sha256": "f136ef4ae4baabf58e36614032eacab06c288a1b99e316462b86bb488ae0d9ad",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_pill/nnscorer_search_index.faiss": {
+      "sha256": "b2192e1a7aae0deef184a5c440cacd0610b0e2d6c6715942c8a6b3688969df34",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_pill/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_screw/nnscorer_search_index.faiss": {
+      "sha256": "f4cc4519555f9df446fafd909e841fdb000433e966739e5508cbe686867c46c7",
+      "mode": "100644",
+      "bytes": 134
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_screw/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_tile/nnscorer_search_index.faiss": {
+      "sha256": "061d89cdcff1cc2634a5570437816333c97957e4463c7b4471a0f7d987ce99c5",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_tile/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/nnscorer_search_index.faiss": {
+      "sha256": "5936353015dd313d74b50cd3195895ba4bee037cf4d2817ab7636c8403d67371",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_transistor/nnscorer_search_index.faiss": {
+      "sha256": "9abbcef6af785b784465c1430887fc3840c3f71cdf2df8fa7ae8ef8a1e9856f7",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_transistor/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_wood/nnscorer_search_index.faiss": {
+      "sha256": "8a7c5f697cd175e326f3a0e00464dbeb0037d9040118060200552f112df72d0a",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_wood/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_zipper/nnscorer_search_index.faiss": {
+      "sha256": "6521c5947112da8217a9a9bef883a3cf86d1881cb4f198838573c527724a99b4",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/models/mvtec_zipper/patchcore_params.pkl": {
+      "sha256": "b49a0ef734ec7d02ec778a70a343448670c12b9f2dec0e68e038bdb8fc0de64f",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM224_WR50_L2-3_P01_D1024-1024_PS-3_AN-1/results.csv": {
+      "sha256": "dac72d846f71eb1ea94eaf1c52d542595e7c85acdd18b2183eff129b5b4cebce",
+      "mode": "100644",
+      "bytes": 1740
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "cf388632dd10b99694ac17e98e719622db1d10a33c5776e2ada34d2b9ca7f7ee",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "0194ef2400c833d40072e1008ccf68da94814a8cf140ec235e2339e5c32a008c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "c8d32a7dc85472d7810aa4f8b601836e998ce2fa171c99d11acd6ea579e7fda0",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "3d4129654c25a829e01b98e580942f129a3e1ac7deb4fb618c2276f12dbf0c7c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "bb9eb4d1ea2f522018d205dfba9cedab7e641f638f68c2914573bd7b814f05e9",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "23f3249a824b46e780977927ffd48aa799d51ad204405a329be1295d11c15bab",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "45fb00ca53d1518311c45fe341afbc8a32c958b0437e4a0fc12bfa274c2eef0c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "8904bb1c5575dfa4dacea5ae6cbf2cf3e7789014e40e8ce8e748bf98f6bad0c6",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "1fbf3bd701a655b78bf4810ae56819f2d2b45fbfefa9345e825371f4dfa920aa",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "4106161c7e4006563ce3f781fd8a952d30aa81cfd9f948eba5d35d62c545b101",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "0e4ffe05314688f8043909cbd8c73dff61926356bdf6f5222eea89bd02aa0ed1",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "3e0998f9d29a95bcf912a2d2affcd8ecb483f9a0ad65ea7a2520c8ee3e1cff8c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "2c6574d896eea277830fa5a3297f3d6a883d68c48ad12caf93719730ea76a12a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "4a28792e562a4c0195af361aef0fa48c793166ec42398abcebfa37afda53ed5b",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "ad012a78226fb9a547fa42213c15455dcbb9082977ca2a046e0348903b1419ba",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "da7610106b9c84a194b7a5bc379aa12f4bddd83efd0c8771ed4eeebb8cc24f01",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "83f43746fd8cab35471df9c880d30cc98d32f413544c35926fcc5c241a92cf6c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "bd25de16e44f56f0c19cd6bff82c7b9b02786e3ab6bdbb1127d88af589c5852d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "94b3ce750e1fbd0abd13ab4b024657ef0dc5b4b2926981e1d52ed03ea6edd53f",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "f6ee312a09175ffa306836971d5a650b7a10149dca8ab1f5d82ba9fe2b458146",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "e6c468254e725702c953e7d15ff4a1cd80c27b52897ec2b5d19377e4f3c4e8b2",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "65612f2abec1a43a7627638278ee22a5334a6062a4b043f4bb6c928b32f973e5",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "c8ecd70783c04d2b7e7628b3e20617bbbdaab06e8b86b401b98ef7bd48358d25",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "317a1431eda7184d8203ed76975255b658eb2b4fff2dbd1ab6b32fc358f7da8b",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "2dd8c45097cf9ca0c113991e5e5513be69acdf9352798fe597483394fa3e00a1",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "e422fa048764e2e695183fd148a98db0f44105cc3905ad76b27c22fa2c2f3159",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "3411aeeaa19ec482967bad20ae15f0823ccde54afd391982ee3052de7a789776",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "6d561128a677bb57c579e47cef08082f14ef07bd5376b9d81c08c2842261e896",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "de638a7a8b6b064e24fc82d1bb45ba55c7e3a7080be18b4a78786f8a6ae0ab48",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "efb31ab6a0df4b85bc15124ce1b509e36c8800df9dd840d2d1f6145031841e34",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "3d7c4f16f03fa3a03880082d6b1b7694b567d0a1251fc23150b716a46cd4edaa",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "e0c0cf706421160254f26044c6b21faa552c911a7da8aa6050b99061a9b641f0",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "f7f85c4172ebadddc8fd998488e8c0824afd7cc7b32bf8c0db37ad8ac967b7f5",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "8837661cf1306dac9672a9771883155dada5063d9403a8d63ceff7184ccc1bf6",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "9e3c52305db3d6c16c31c700ee7c2eca47998ea4d70fb0b42395963df4792413",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "88f0afc90c25330709302376d4995e26e788fcfbe9f1e5f839257d383aea17be",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "f4beac0d6a8d31dac4ba216960a89b39e10da6aa8e2af89e57e86cdde5fcb37d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "a9a43667713e3a3361d6390e1f7b6dc9de2fc6e624d0d8deba9f8ec4beb22778",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "7fa400fbd4e016ddf8fb348db53af526bb37bc1894aca39623db881629d34afc",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "6037e9aed2703c0dbfb0cb8c42ab9d86132f01ae1b4129c485338926d84326ed",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "82b212ac6c0e31c62f6c1f2f83816c84c08cead918d06d4e0487c34ec41c0f5b",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "5f1b0fd0e486f7098a2e7028a2153df8db91df6d65b684c3e1b14ccffffc585f",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "081b0b1af7bdb6ab85e6fbffcb61d078ff1a4bb87ae744a2482b3ce9c363fdc8",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "3617159a0aa7b16bfd2968dcce6ca1ae2ecefd2f4bad9e34f1826ba461f22dd5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "a5eaa693e521d0f80f0cfed3f353bd5aae6eafd4a64273c9a483c8cd4bcda69a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b457ded8511c860833158bed49787d9d0a5eaa294872cd48e0a1ca7962e662dd",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "2c59a18e521ea377102c04f56c25437e1f59afac7f44c92ec0096fc907a3eeae",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "f36c1de3b84d4a022335b5408c2f49d40cdbec667df00c7d5a74815a9ba65411",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-3_AN-1/results.csv": {
+      "sha256": "0e579f849642c492344b1cbac0ebc7f95d3c4db61e7774005acd84251dcae8f7",
+      "mode": "100644",
+      "bytes": 1721
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "5d325335b7d874342e7a2f5ae0d74085c8c6d66024310383021d479d21b9a41d",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "6313b8f309791722b20111d5e77060bd84f96ba2b5bd40408a43f8a3e17af704",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "9303851324b13a75c7b8a538fbdcfb14e8daf947783bb10a254c913cd3ce4b4e",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_bottle/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "d78be1a20940769475a1b71a96ac90d265043978aa969ac27e40240bd1e68712",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "d956835abbb8042e93d82318f0b07a2c7609eac6f6d767aec8db6e42399cf6ef",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "ef5fd64990263ed3181a6aede8a409655ff4c57fa9fa65c81a91d9a6c9dfbcf0",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_cable/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "686622688436067ac2f726c7e197f2b906753b742a7fcdc520b0b84fe43bf78a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "2ea61325d6c38326616ea59f4eee8ee64b69a9fc8e1e70b84be02a04d547b68c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "db3893eacad544c7b353b54171fc028489aa25b9e7d9fee062cfdf0084b9f970",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_capsule/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "1f3d127dfa515bd0e6b543935fc04662fb472908bd157fb3dac5f9e0a23ea647",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "8c30debca6b302bcffeedfdabaf55f800cb14d0f8830ae31cdcf05d9cb2d3330",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "27f2ae3f0af761ab27ec66f5143f28400eb40a4be054b6df677b14a236f13df3",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_carpet/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "64f458d93f17f9ccfdacd16e4513edc512d150fc654c0101d5618d8da4cf7062",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "ad695db6ca6ab2b31403fb9a15b9e50f8c2b55769852acf0468d0bf7bf100911",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "602c28a566252e4c01b8da811472460fc20c43a36d478b81fbeb1de2732d20d8",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_grid/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "d1e7672ca35cf4fcc9b38cc04a66700ffea0c6f572ac8ec969468c11038d2793",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "e40df642a1237fb1cb51c8cd0dbcede12b1b66819123ed4bf0dff9311fc1cf67",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "be26de57b5b028fa462ab917f5f445315ec56464c80ad05ab07ff2bb374100e4",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_hazelnut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "89fb96548e6efd06b027a3bca75771e1e66d450045122a310ef943880988aa16",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "191d17ed199db0acc9920b606bc816ccf0bef11be54b33c2259b8cb3a6431283",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "045950db87ec2ba1fc1aaf599ecd3826f273f1d39a5369b6b9db33f401406107",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_leather/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "7ad2606936ee8d5b872251c341540295324a2186747bc77267df94fe35589c69",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "72f53bfce652561a5915a321d56d664aa88ec40bf0c3cee0553411916609e238",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "f75ac60138f565983835587e26571b2a3e2375481ca49ff7e6d9335c8908da6c",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_metal_nut/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "fbc7b9d5c2d9094a9a2d8d61d3b621a7885e811d5ed58c4dc11550b626ebe415",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "c502b492d3152eee27f325ab2e7ceabaa7cae0768f29e5a806cb558d75f37d04",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "96205f3582ec2bb6b79199c4bfdbca42605639ae383391fbcf6b3de96f6d3583",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_pill/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "45a932e3d20e2324f4468fee08f09cad44dcfbd3beb9d54deb2d203f50d062cf",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "09295020688b44d24c80434927ccde52984730ad2e3a58873805a20f635a15a1",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "4595ef0bc3b569047cae390428792466704e3947c654eb0bb4335b59642c4439",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_screw/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "d014f3184b8bcacb5783c8b80bb69503a1e55413d6fc64e6acb575e8bffa650a",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "82a7a49592e91c6cff41fec9d2626f84d42c366b1397ab8f19a89272ec26b0ed",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "e34712ed815e5443476e2a53ddc3e97e00306076da8ab9cb8c60feeda33e2e64",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_tile/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "20b53d583990e50086b8fa9584f84612282b318fccd058f233cd1e46be09c504",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "1ec72487b1966d34da9aa26efc04121b8cd87e66202ba7de4e6ad38c553b0deb",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "8683c5a3869d52dde68453268002bd5e731619dad5c94ab5e819ba21576819a1",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_toothbrush/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "dcbe99b4b810b79ea1b2b7d91bf43210edeec5b7bba1ab7915de844906d58acb",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "63cac10772d6088e5726121e9f7f7863921c3ea91bee43cc3b225198113bdf7f",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "880a355e93888fcf7501cace0d0342d9d8511e136a67c4817686dc1acfbba091",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_transistor/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "940d8dae72544f1c7d12782d6684c8265b127e632efbfd3062a4c23768750a4f",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "c56ee3ffbf83eded370a2d1e0067fad286f15e74ea3710af7a458ee0a9465266",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "9444afcad536faeae3db4570eb99089fb571a85ba35089e4bdb0c739c33505b0",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_wood/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-1-3_nnscorer_search_index.faiss": {
+      "sha256": "07db6b78489c900e4faea52dd9db2a72de87cbc366b0f9e6f4b7bcfc264f23a9",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-1-3_patchcore_params.pkl": {
+      "sha256": "2b4fb285b1582bf6ef88b3216fbf331a9d90d102a2a5c238e9c1028fce77dc27",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-2-3_nnscorer_search_index.faiss": {
+      "sha256": "e16f6ce632489b69d27ed954a545e0839530c2ba0eea31d8d4817bc7034c7c20",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-2-3_patchcore_params.pkl": {
+      "sha256": "b4df01f28ebb775e6ed845fa4e64ba0d52b8d7ec5fecafd933cab535215d6fb5",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-3-3_nnscorer_search_index.faiss": {
+      "sha256": "86ae7d0f3fdba8b41642e8678a9844fcf232db2049b04b133a36e537010008be",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/models/mvtec_zipper/Ensemble-3-3_patchcore_params.pkl": {
+      "sha256": "002fd219fc2d18d2f54ceb14e81601874e8fa9fecc496a898a2e1891844969fe",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_Ensemble_L2-3_P001_D1024-384_PS-5_AN-5/results.csv": {
+      "sha256": "bdf9ce519fbdf69e36daee6e3fa5f25b517b1beb1487fd08a0dee8b6d03cdd65",
+      "mode": "100644",
+      "bytes": 1760
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_bottle/nnscorer_search_index.faiss": {
+      "sha256": "a9ea257f73ef6a65092c04da3d62d5d33b29d9f7978a3a8abd860f09d0da5029",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_bottle/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_cable/nnscorer_search_index.faiss": {
+      "sha256": "2ecdff9ac7fc1a6ca9026cdfd97d5be0fba999beb0c89f988c91e23520044ef9",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_cable/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_capsule/nnscorer_search_index.faiss": {
+      "sha256": "d5ae21789255db83b6945963ab1444a0790f8978289de4635bcddcd44de269b0",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_capsule/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_carpet/nnscorer_search_index.faiss": {
+      "sha256": "e799fe356a938ed8ce66add2b1b8c1acc76868d5858ae54701a69d628380c409",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_carpet/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_grid/nnscorer_search_index.faiss": {
+      "sha256": "3c3dabab7212d18025a334301af315e49ac0bfe319c9607bf7eb45818c03be4a",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_grid/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/nnscorer_search_index.faiss": {
+      "sha256": "265600a3e0593df29692b6a7f91d12186f111dd73c7634a7f2cb9fbf75449bd2",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_hazelnut/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_leather/nnscorer_search_index.faiss": {
+      "sha256": "03788a05d5275ca3c908d67165a1e7841293d454fe04cc814aaa6592c4a05e7f",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_leather/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/nnscorer_search_index.faiss": {
+      "sha256": "f398da5e4fbe1495c4d521dbece381dd47453fd17889a530fc0916ef51a20d2b",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_metal_nut/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_pill/nnscorer_search_index.faiss": {
+      "sha256": "e74a60a5b32102b6e729b2a22424c829ba1493d2cb8d1d3c350936ae9cf03460",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_pill/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_screw/nnscorer_search_index.faiss": {
+      "sha256": "7bdd292426004bb3008dbebe0b61dcfbe182d87e54efd61917d104ab7a5bfd2a",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_screw/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_tile/nnscorer_search_index.faiss": {
+      "sha256": "0eda420186875698fa6e5a3306322930de878ea753a0db625b23a74bada8bba1",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_tile/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/nnscorer_search_index.faiss": {
+      "sha256": "a9a38f0c59b1cbe1a447f7412df5411a055ad78ebdc7a1d7ff5eddd8ea0ff37f",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_toothbrush/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_transistor/nnscorer_search_index.faiss": {
+      "sha256": "0418370e06658769287eb06ddabcf255bd6a07baf27f827537b02a1a7d13f2a4",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_transistor/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_wood/nnscorer_search_index.faiss": {
+      "sha256": "7d266dca28b79762cbe7f2b82b44b1309446f327a484bfb772a809ea15e5faeb",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_wood/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_zipper/nnscorer_search_index.faiss": {
+      "sha256": "166d4c6477bea07e520224ef6b1a166a54c221d3d5962e8f2d84bf99cd31154c",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/models/mvtec_zipper/patchcore_params.pkl": {
+      "sha256": "93257424b9150701e9d369709487a036130c01a12c87967fe1d6791a0f1faa7b",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-3_AN-1/results.csv": {
+      "sha256": "6d6d5eb13f77a980ccf29a9fac3b826e18f4b2d58218d50fe6058a354f5a5c83",
+      "mode": "100644",
+      "bytes": 1765
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_bottle/nnscorer_search_index.faiss": {
+      "sha256": "6de7601a734ac045c8c57ac2961c3db15d37ebe42070719ac1233cff5cdaaa28",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_bottle/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_cable/nnscorer_search_index.faiss": {
+      "sha256": "9330d5ce9166c5e111a01193ca875124b14fdeb8059be847f821672a163afec4",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_cable/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_capsule/nnscorer_search_index.faiss": {
+      "sha256": "e0378438c5370f5951c419a96713974918b4deb2b61d013ac20a0f0612f36789",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_capsule/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_carpet/nnscorer_search_index.faiss": {
+      "sha256": "f434732ea86ae24e7bc3a3536f7db9e5deb49caf933952505e7efb038e120a64",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_carpet/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_grid/nnscorer_search_index.faiss": {
+      "sha256": "f471ca2547e1f4f71d992158e2d03472284b30173c8accd89910b5b8d59b280d",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_grid/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_hazelnut/nnscorer_search_index.faiss": {
+      "sha256": "0e69e3d146b1dca048ce1a42ec0373f13acf6e5ce1f3e9e0b942abf5fd045da5",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_hazelnut/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_leather/nnscorer_search_index.faiss": {
+      "sha256": "b3050c6fdcc50cd98c245f835f980a17d5875388a4e6cbad2734319a70e9a43b",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_leather/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_metal_nut/nnscorer_search_index.faiss": {
+      "sha256": "dd5df176fad1ee839ca1030fdaf1c6f48c0c6af463996db53e2c7b4b8fdfcded",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_metal_nut/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_pill/nnscorer_search_index.faiss": {
+      "sha256": "f7b2da245cc5083b3c6e750a20e977c2d9659717525ad8bee71592e4ba5bb422",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_pill/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_screw/nnscorer_search_index.faiss": {
+      "sha256": "832e8dc1d708d6bffd0dac35ac6a7480b38da10d61b6e9cb5ef1d7d5679cbd06",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_screw/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_tile/nnscorer_search_index.faiss": {
+      "sha256": "38f4c157a916a898d2595df0e2b4f9c1bf0c659ba01a66930904b4f0eb844865",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_tile/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_toothbrush/nnscorer_search_index.faiss": {
+      "sha256": "f1a7becff40ac6bea5b4cb636d401d6f77a2af7b4b47acf8dd2c3fcbc56e2514",
+      "mode": "100644",
+      "bytes": 132
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_toothbrush/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_transistor/nnscorer_search_index.faiss": {
+      "sha256": "2ce355c1bda68b4242e8f5904cf73e9f669e807612c5bb3219f31cfccb5f22a2",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_transistor/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_wood/nnscorer_search_index.faiss": {
+      "sha256": "af231a1d9771947f279666893494f0b6a9d596a2ab4f4b9640eb1101fb3da56a",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_wood/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_zipper/nnscorer_search_index.faiss": {
+      "sha256": "37bc9b021fd9d8f987da1a277ed678d31df3bbf52ee630b2b35a7c1e49658d91",
+      "mode": "100644",
+      "bytes": 133
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/models/mvtec_zipper/patchcore_params.pkl": {
+      "sha256": "eac7394245785c7286dc01bf7c5cb93657fd477af8e12d2978a4067d23bebf23",
+      "mode": "100644",
+      "bytes": 128
+    },
+    "upstream/models/IM320_WR50_L2-3_P001_D1024-1024_PS-5_AN-3/results.csv": {
+      "sha256": "318814b141f296a3c7e57a3854736c8a7b2e9c7e508ba37338637db86ac1b1af",
+      "mode": "100644",
+      "bytes": 1725
+    },
+    "upstream/pyproject.toml": {
+      "sha256": "0984c936920202c798a1336b7b138f607d45ce303ec294a09e0d0712e7fe8240",
+      "mode": "100644",
+      "bytes": 169
+    },
+    "upstream/requirements.txt": {
+      "sha256": "42d51370e068ec5b7335b4dbc9fce0d2811d7df1b9d20f62a18deed6b4c351d6",
+      "mode": "100644",
+      "bytes": 222
+    },
+    "upstream/requirements_dev.txt": {
+      "sha256": "b89703ebe8259a8b9d6b2ff2b3e0923356157db998f1bee6071cdff54763f7fb",
+      "mode": "100644",
+      "bytes": 76
+    },
+    "upstream/sample_evaluation.sh": {
+      "sha256": "4048f417f59bf5926deb81e4f0c71185439d347dbfe710199e36982a7615ca16",
+      "mode": "100644",
+      "bytes": 801
+    },
+    "upstream/sample_training.sh": {
+      "sha256": "1c19e085694ba9638603f90229584e5d73587b55f041650d214bbcabc76e7076",
+      "mode": "100644",
+      "bytes": 4948
+    },
+    "upstream/setup.cfg": {
+      "sha256": "90014e49f81072f519c85ed6738f801af2e8d10fed1c2337e09e0be441830a20",
+      "mode": "100644",
+      "bytes": 323
+    },
+    "upstream/setup.py": {
+      "sha256": "4c5dfdd9715fb76bceadfb0ec2f6bfdbfeaea33932b1ba759f57706a2e6c334d",
+      "mode": "100644",
+      "bytes": 629
+    },
+    "upstream/src/patchcore/VERSION": {
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "mode": "100644",
+      "bytes": 6
+    },
+    "upstream/src/patchcore/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "100644",
+      "bytes": 0
+    },
+    "upstream/src/patchcore/backbones.py": {
+      "sha256": "d02b4317f8a9e4cca17d6c0c4f4760d00bf9020cbd25d33f88f27198384d4472",
+      "mode": "100644",
+      "bytes": 3271
+    },
+    "upstream/src/patchcore/common.py": {
+      "sha256": "e18e05d976f029ecad1fe786c270fdb8d6f2f1bf69d466f22f90704154e7fe7d",
+      "mode": "100644",
+      "bytes": 13406
+    },
+    "upstream/src/patchcore/datasets/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "100644",
+      "bytes": 0
+    },
+    "upstream/src/patchcore/datasets/mvtec.py": {
+      "sha256": "ccc9afd84d8145ca1f3241fc2156988029742664f40f24dd04725c488fb3bf76",
+      "mode": "100644",
+      "bytes": 5942
+    },
+    "upstream/src/patchcore/metrics.py": {
+      "sha256": "5c0c1942643b2eda63fbbaacffaeeedb4fded35a628094fa9fa4a672805db7f5",
+      "mode": "100644",
+      "bytes": 2800
+    },
+    "upstream/src/patchcore/networks/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "100644",
+      "bytes": 0
+    },
+    "upstream/src/patchcore/patchcore.py": {
+      "sha256": "70cb638cd78692159e4a210424b37763558e8af8969109ef3d83765c351f3027",
+      "mode": "100644",
+      "bytes": 11936
+    },
+    "upstream/src/patchcore/py.typed": {
+      "sha256": "0db0837008abbfbebd1d2d626f364b5eaf153dacd87fb24290a4b38f772db9d3",
+      "mode": "100644",
+      "bytes": 58
+    },
+    "upstream/src/patchcore/sampler.py": {
+      "sha256": "39612cd2b486865ece304348f740f4bc700a1c2e8684fbab3c2ed016c7801f2d",
+      "mode": "100644",
+      "bytes": 6961
+    },
+    "upstream/src/patchcore/utils.py": {
+      "sha256": "c0d0f2c78f228e5c73bc33a9985ab46bfc7e853bc5cc1e2302d209625d665af7",
+      "mode": "100644",
+      "bytes": 5805
+    },
+    "upstream/test/test_common.py": {
+      "sha256": "9723030f2e9f94806f04c3e01c41e020030679d90a6dc25262388e38925657b7",
+      "mode": "100644",
+      "bytes": 3830
+    },
+    "upstream/test/test_patchcore.py": {
+      "sha256": "c04e9f077f8ffc51a8ecd21f1e840a1149666c70e1c7f8d56eed76a812b18767",
+      "mode": "100644",
+      "bytes": 5536
+    },
+    "upstream/test/test_sampler.py": {
+      "sha256": "50ee30a0ea665490dfeb7f41141829917fedc366804fa85a786b9d39ee5780bc",
+      "mode": "100644",
+      "bytes": 4747
+    },
+    "upstream/tox.ini": {
+      "sha256": "a1ff80d77221c8b61c76810e85c00f2ae4a18a5197bc6964e8d203f71ab41c08",
+      "mode": "100644",
+      "bytes": 401
+    }
+  },
+  "excluded_git_metadata": [],
+  "history_repair": {
+    "pattern": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "approved_calendar": true,
+    "seed": 20251028,
+    "previous_main": "91121a3d99821e49facc35aeb703afe402a9c2d8",
+    "daily_counts": {
+      "2025-08-05": 2,
+      "2025-08-06": 0,
+      "2025-08-07": 3,
+      "2025-08-08": 3,
+      "2025-08-09": 2,
+      "2025-08-10": 1,
+      "2025-08-11": 3,
+      "2025-08-12": 1,
+      "2025-08-13": 0,
+      "2025-08-14": 3,
+      "2025-08-15": 4,
+      "2025-08-16": 0,
+      "2025-08-17": 1,
+      "2025-08-18": 3,
+      "2025-08-19": 2,
+      "2025-08-20": 1,
+      "2025-08-21": 2,
+      "2025-08-22": 5
+    },
+    "description": "Reconstructed import timestamps; not original development dates."
+  }
+}
